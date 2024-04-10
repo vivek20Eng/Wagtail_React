@@ -1,12 +1,17 @@
 import React from 'react';
-import HelloWorld from './components/HelloWorld';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
+
 import Login from './components/Authentication/Login';
+import OlmsDashboard from './components/OLMS/OlmsDashboard';
+
 function App() {
   return (
-    <div>
-      <HelloWorld />
-      <Login/>
-    </div>
+    <Router>
+      <Routes> 
+        <Route path="/dashboard" element={<OlmsDashboard />} /> 
+        <Route path="/" element={<Login />} /> 
+      </Routes>
+    </Router>
   );
 }
 
