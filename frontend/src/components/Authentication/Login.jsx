@@ -16,6 +16,8 @@ const Login = () => {
       })
       .then((response) => {
         console.log(response.data.message);
+        const { token, user } = response.data;
+        localStorage.setItem("authToken", "true");
         navigate("/dashboard");
       })
       .catch((error) => {
