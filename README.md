@@ -1,3 +1,5 @@
+![Project Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+
 # Online Management System with React and Django (Wagtail)
 
 This project is an online management system built using React for the frontend and Django for the backend. It demonstrates how to create a full-stack web application with a modern frontend and a robust backend.
